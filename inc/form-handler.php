@@ -7,6 +7,16 @@ if(
 isset($_POST['motortech_submit'])
 
 ){
+    
+if(
+
+!empty($_POST['website'])
+
+){
+
+exit;
+
+}
 
 $name = sanitize_text_field(
 
