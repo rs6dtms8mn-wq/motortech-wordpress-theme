@@ -136,7 +136,19 @@ get_template_part(
 
 </section>
 
-<!-- Контакты и заявка -->
+<!-- Галерея работ -->
+
+<?php
+
+get_template_part(
+
+    'template-parts/gallery'
+
+);
+
+?>
+
+<!-- Запись на ремонт -->
 
 <section class="container" id="contact">
 
