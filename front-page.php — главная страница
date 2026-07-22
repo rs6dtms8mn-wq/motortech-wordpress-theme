@@ -274,6 +274,18 @@ required
 
 </select>
 
+<!-- Защита от спама -->
+
+<input
+
+type="text"
+
+name="website"
+
+style="display:none"
+
+>
+
 <button 
 
 type="submit"
