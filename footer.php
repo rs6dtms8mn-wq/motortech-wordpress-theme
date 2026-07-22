@@ -26,6 +26,16 @@
 ☎ Позвонить
 
 </a>
+
+<?php
+
+get_template_part(
+
+'template-parts/contact-buttons'
+
+);
+
+?>
 <?php wp_footer(); ?>
 
 </body>
