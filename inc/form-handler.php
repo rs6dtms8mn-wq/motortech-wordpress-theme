@@ -8,29 +8,25 @@ isset($_POST['motortech_submit'])
 
 ){
 
-$name =
-
-sanitize_text_field(
+$name = sanitize_text_field(
 
 $_POST['name']
 
 );
 
-$phone =
-
-sanitize_text_field(
+$phone = sanitize_text_field(
 
 $_POST['phone']
 
 );
 
-$service =
-
-sanitize_text_field(
+$service = sanitize_text_field(
 
 $_POST['service']
 
 );
+
+// Создаём заявку в WordPress
 
 $post_id = wp_insert_post(
 
@@ -38,9 +34,7 @@ array(
 
 'post_type'=>'motortech_request',
 
-'post_title'=>
-
-$name.' - '.$phone,
+'post_title'=>$name.' - '.$phone,
 
 'post_status'=>'publish'
 
@@ -71,6 +65,44 @@ $service
 );
 
 }
+
+// Отправка письма администратору
+
+$admin_email = get_option(
+
+'admin_email'
+
+);
+
+$message = "
+
+Новая заявка MOTÖРТЕХ
+
+Имя:
+
+$name
+
+Телефон:
+
+$phone
+
+Услуга:
+
+$service
+
+";
+
+wp_mail(
+
+$admin_email,
+
+'Новая заявка MOTÖРТЕХ',
+
+$message
+
+);
+
+// Перенаправление после отправки
 
 wp_redirect(
 
