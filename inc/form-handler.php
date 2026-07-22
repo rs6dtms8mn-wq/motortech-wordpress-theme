@@ -20,7 +20,7 @@ exit;
 
 }
 
-// Получаем данные формы
+// Получаем данные
 
 $name = sanitize_text_field(
 
@@ -80,7 +80,7 @@ $service
 
 }
 
-// Отправка письма администратору
+// Отправка письма
 
 $admin_email = get_option(
 
@@ -116,7 +116,27 @@ $message
 
 );
 
-// Переход после отправки
+// Отправка в Telegram
+
+if(
+
+function_exists('motortech_send_telegram')
+
+){
+
+motortech_send_telegram(
+
+$name,
+
+$phone,
+
+$service
+
+);
+
+}
+
+// Перенаправление после заявки
 
 wp_redirect(
 
