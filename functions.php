@@ -24,13 +24,29 @@ add_action(
 
 function motortech_scripts(){
 
-    wp_enqueue_style(
+wp_enqueue_style(
 
-        'motortech-style',
+'motortech-style',
 
-        get_stylesheet_uri()
+get_stylesheet_uri()
 
-    );
+);
+
+wp_enqueue_script(
+
+'motortech-calculator',
+
+get_template_directory_uri()
+
+.'/assets/js/calculator.js',
+
+array(),
+
+null,
+
+true
+
+);
 
 }
 
