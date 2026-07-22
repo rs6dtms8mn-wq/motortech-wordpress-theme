@@ -21,7 +21,11 @@
 </div>
 
 </footer>
+<a href="tel:+70000000000" class="mobile-call">
 
+☎ Позвонить
+
+</a>
 <?php wp_footer(); ?>
 
 </body>
