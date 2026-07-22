@@ -41,5 +41,7 @@ add_action(
     'motortech_scripts'
 
 );
+require_once get_template_directory()
 
+.'/inc/theme-options.php';
 ?>
