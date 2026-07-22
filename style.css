@@ -417,3 +417,46 @@ font-size:40px;
 margin:10px;
 
 }
+/* Калькулятор */
+
+.calculator {
+
+background:#f3f3f3;
+
+margin-top:50px;
+
+padding:40px;
+
+border-left:6px solid var(--yellow);
+
+}
+
+.calc-form {
+
+display:flex;
+
+flex-direction:column;
+
+gap:15px;
+
+max-width:500px;
+
+}
+
+.calc-form select {
+
+padding:15px;
+
+font-size:16px;
+
+border-radius:5px;
+
+border:1px solid #ccc;
+
+}
+
+.calc-form label {
+
+font-weight:bold;
+
+}
