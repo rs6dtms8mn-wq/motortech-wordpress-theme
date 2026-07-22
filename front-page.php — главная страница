@@ -56,7 +56,7 @@ get_template_part(
 
 ?>
 
-<!-- Почему выбирают нас -->
+<!-- Преимущества -->
 
 <section class="container">
 
@@ -96,7 +96,7 @@ get_template_part(
 
 <p>
 
-Работаем с различными видами техники.
+Работаем с разными видами техники.
 
 </p>
 
@@ -130,9 +130,7 @@ get_template_part(
 
 <p>
 
-Ответственный подход к каждому
-
-ремонту.
+Ответственный подход к каждому клиенту.
 
 </p>
 
@@ -142,7 +140,7 @@ get_template_part(
 
 </section>
 
-<!-- Галерея работ -->
+<!-- Галерея -->
 
 <?php
 
@@ -154,7 +152,7 @@ get_template_part(
 
 ?>
 
-<!-- Отзывы клиентов -->
+<!-- Отзывы -->
 
 <?php
 
@@ -166,7 +164,7 @@ get_template_part(
 
 ?>
 
-<!-- Калькулятор шиномонтажа -->
+<!-- Калькулятор -->
 
 <?php
 
@@ -194,9 +192,25 @@ get_template_part(
 
 </p>
 
-<form class="contact-form">
+<form 
 
-<input 
+class="contact-form"
+
+method="post"
+
+>
+
+<input
+
+type="hidden"
+
+name="motortech_submit"
+
+value="1"
+
+>
+
+<input
 
 type="text"
 
@@ -204,9 +218,11 @@ name="name"
 
 placeholder="Ваше имя"
 
+required
+
 >
 
-<input 
+<input
 
 type="tel"
 
@@ -214,11 +230,19 @@ name="phone"
 
 placeholder="Ваш телефон"
 
+required
+
 >
 
-<select name="service">
+<select 
 
-<option>
+name="service"
+
+required
+
+>
+
+<option value="">
 
 Выберите услугу
 
@@ -254,7 +278,9 @@ placeholder="Ваш телефон"
 
 type="submit"
 
-class="btn">
+class="btn"
+
+>
 
 Отправить заявку
 
