@@ -4,9 +4,17 @@ function motortech_send_telegram($name, $phone, $service){
 
 // Вставьте свои данные Telegram
 
-$bot_token = 'ВАШ_BOT_TOKEN';
+$bot_token = get_option(
 
-$chat_id = 'ВАШ_CHAT_ID';
+'motortech_bot_token'
+
+);
+
+$chat_id = get_option(
+
+'motortech_chat_id'
+
+);
 
 // Текст сообщения
 
