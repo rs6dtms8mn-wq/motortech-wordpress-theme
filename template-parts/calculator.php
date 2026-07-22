@@ -2,17 +2,17 @@
 
 <h2>
 
-Рассчитать стоимость шиномонтажа
+Калькулятор шиномонтажа
 
 </h2>
 
 <p>
 
-Выберите параметры автомобиля — мы подготовим расчёт.
+Рассчитайте примерную стоимость работ
 
 </p>
 
-<form class="calc-form">
+<div class="calc-form">
 
 <label>
 
@@ -20,27 +20,33 @@
 
 </label>
 
-<select>
+<select id="carType">
 
-<option>
+<option value="0">
+
+Выберите автомобиль
+
+</option>
+
+<option value="1000">
 
 Легковой автомобиль
 
 </option>
 
-<option>
+<option value="1500">
 
-Внедорожник / SUV
+SUV / Кроссовер
 
 </option>
 
-<option>
+<option value="2500">
 
 Микроавтобус
 
 </option>
 
-<option>
+<option value="4000">
 
 Грузовой автомобиль
 
@@ -50,31 +56,37 @@
 
 <label>
 
-Диаметр колеса
+Размер колеса
 
 </label>
 
-<select>
+<select id="wheelSize">
 
-<option>
+<option value="0">
+
+Выберите размер
+
+</option>
+
+<option value="0">
 
 R13-R14
 
 </option>
 
-<option>
+<option value="300">
 
 R15-R16
 
 </option>
 
-<option>
+<option value="600">
 
 R17-R18
 
 </option>
 
-<option>
+<option value="1000">
 
 R19-R22
 
@@ -84,38 +96,58 @@ R19-R22
 
 <label>
 
-Сезон
+Дополнительные работы
 
 </label>
 
-<select>
+<select id="extra">
 
-<option>
+<option value="0">
 
-Летняя резина
-
-</option>
-
-<option>
-
-Зимняя резина
+Без дополнительных работ
 
 </option>
 
-<option>
+<option value="500">
 
-Демонтаж / монтаж
+Ремонт прокола
+
+</option>
+
+<option value="1000">
+
+Мойка колёс
+
+</option>
+
+<option value="1500">
+
+Хранение шин
 
 </option>
 
 </select>
 
-<button class="btn">
+<h3>
 
-Узнать стоимость
+Стоимость:
 
-</button>
+<span id="price">
 
-</form>
+0
+
+</span>
+
+₽
+
+</h3>
+
+<a href="#contact" class="btn">
+
+Заказать шиномонтаж
+
+</a>
+
+</div>
 
 </section>
