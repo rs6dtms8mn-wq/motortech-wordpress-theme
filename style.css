@@ -378,3 +378,42 @@ padding:15px;
 margin:0;
 
 }
+/* Отзывы */
+
+.reviews {
+
+display:grid;
+
+grid-template-columns:
+
+repeat(auto-fit,minmax(280px,1fr));
+
+gap:20px;
+
+}
+
+.reviews .card {
+
+background:#fff;
+
+box-shadow:0 5px 15px rgba(0,0,0,.1);
+
+border-left:5px solid var(--red);
+
+}
+
+.advantages {
+
+text-align:center;
+
+}
+
+.advantages h2 {
+
+color:var(--red);
+
+font-size:40px;
+
+margin:10px;
+
+}
