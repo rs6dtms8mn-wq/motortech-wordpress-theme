@@ -1,15 +1,49 @@
-<?php get_header(); ?>
+<?php
+
+get_header();
+
+?>
 
 <main class="container">
 
-<h1>МОТОРТЕХ</h1>
+<h1>
 
-<p>
-Ремонт автомобилей, шиномонтаж,
-обслуживание легковых, грузовых автомобилей
-и спецтехники.
-</p>
+<?php
+
+the_title();
+
+?>
+
+</h1>
+
+<?php
+
+if(
+
+have_posts()
+
+):
+
+while(
+
+have_posts()
+
+):
+
+the_post();
+
+the_content();
+
+endwhile;
+
+endif;
+
+?>
 
 </main>
 
-<?php get_footer(); ?>
+<?php
+
+get_footer();
+
+?>
