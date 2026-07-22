@@ -460,3 +460,91 @@ border:1px solid #ccc;
 font-weight:bold;
 
 }
+
+/* Плавающие кнопки связи */
+
+.floating-buttons {
+
+position:fixed;
+
+right:20px;
+
+bottom:20px;
+
+display:flex;
+
+flex-direction:column;
+
+gap:10px;
+
+z-index:9999;
+
+}
+
+.call-button,
+
+.telegram-button,
+
+.max-button {
+
+display:block;
+
+padding:14px 22px;
+
+border-radius:50px;
+
+color:#fff;
+
+text-decoration:none;
+
+font-weight:bold;
+
+text-align:center;
+
+font-size:16px;
+
+}
+
+.call-button {
+
+background:#d62828;
+
+}
+
+.telegram-button {
+
+background:#229ED9;
+
+}
+
+.max-button {
+
+background:#111;
+
+border:2px solid #f5c400;
+
+}
+
+@media(max-width:700px){
+
+.floating-buttons {
+
+right:10px;
+
+bottom:10px;
+
+}
+
+.call-button,
+
+.telegram-button,
+
+.max-button {
+
+padding:12px 18px;
+
+font-size:14px;
+
+}
+
+}
