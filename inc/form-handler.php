@@ -7,7 +7,9 @@ if(
 isset($_POST['motortech_submit'])
 
 ){
-    
+
+// Защита от спама
+
 if(
 
 !empty($_POST['website'])
@@ -17,6 +19,8 @@ if(
 exit;
 
 }
+
+// Получаем данные формы
 
 $name = sanitize_text_field(
 
@@ -106,13 +110,13 @@ wp_mail(
 
 $admin_email,
 
-'Новая заявка MOTÖРТЕХ',
+'Новая заявка с сайта MOTÖРТЕХ',
 
 $message
 
 );
 
-// Перенаправление после отправки
+// Переход после отправки
 
 wp_redirect(
 
@@ -133,5 +137,3 @@ add_action(
 'motortech_form_send'
 
 );
-
-?>
