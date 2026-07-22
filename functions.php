@@ -101,3 +101,7 @@ require_once get_template_directory()
 require_once get_template_directory()
 
 .'/inc/telegram.php';
+
+require_once get_template_directory()
+
+.'/inc/telegram-settings.php';
