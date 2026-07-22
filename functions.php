@@ -97,3 +97,7 @@ require_once get_template_directory()
 require_once get_template_directory()
 
 .'/inc/form-handler.php';
+
+require_once get_template_directory()
+
+.'/inc/telegram.php';
