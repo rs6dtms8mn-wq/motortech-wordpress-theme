@@ -56,7 +56,7 @@ get_template_part(
 
 ?>
 
-<!-- Преимущества -->
+<!-- Почему выбирают нас -->
 
 <section class="container">
 
@@ -90,15 +90,13 @@ get_template_part(
 
 <h3>
 
-🚛 Работа с техникой
+🚛 Легковые, грузовые, спецтехника
 
 </h3>
 
 <p>
 
-Легковые, грузовые автомобили
-
-и спецтехника.
+Работаем с различными видами техники.
 
 </p>
 
@@ -116,7 +114,7 @@ get_template_part(
 
 Большинство работ выполняем
 
-в короткие сроки.
+оперативно.
 
 </p>
 
@@ -134,7 +132,7 @@ get_template_part(
 
 Ответственный подход к каждому
 
-клиенту.
+ремонту.
 
 </p>
 
@@ -144,7 +142,7 @@ get_template_part(
 
 </section>
 
-<!-- Галерея -->
+<!-- Галерея работ -->
 
 <?php
 
@@ -156,13 +154,25 @@ get_template_part(
 
 ?>
 
-<!-- Отзывы -->
+<!-- Отзывы клиентов -->
 
 <?php
 
 get_template_part(
 
     'template-parts/reviews'
+
+);
+
+?>
+
+<!-- Калькулятор шиномонтажа -->
+
+<?php
+
+get_template_part(
+
+    'template-parts/calculator'
 
 );
 
@@ -178,11 +188,17 @@ get_template_part(
 
 </h2>
 
+<p>
+
+Оставьте заявку — мы свяжемся с вами.
+
+</p>
+
 <form class="contact-form">
 
 <input 
 
-type="text" 
+type="text"
 
 name="name"
 
@@ -222,7 +238,7 @@ placeholder="Ваш телефон"
 
 <option>
 
-Грузовой ремонт
+Грузовые автомобили
 
 </option>
 
@@ -234,7 +250,11 @@ placeholder="Ваш телефон"
 
 </select>
 
-<button type="submit" class="btn">
+<button 
+
+type="submit"
+
+class="btn">
 
 Отправить заявку
 
